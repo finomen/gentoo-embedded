@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: gentoo-embedded-base
+  IMAGE_NAME: ${{ github.repository }}-base
 jobs:
   build:
     runs-on: ubuntu-latest
