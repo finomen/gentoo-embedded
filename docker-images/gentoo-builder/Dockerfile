@@ -6,8 +6,6 @@ FROM gentoo/stage3:${STAGE3_VERSION}
 
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
-# TODO: ebuild for binhost?
-
 RUN emerge -vq dev-python/PyGithub eix vim crossdev && eix-update
 
 ADD portage /etc/portage
