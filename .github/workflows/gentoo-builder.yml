@@ -2,7 +2,7 @@ name: gentoo-builder
 on:
   push:
     branches: [ "master" ]
-    paths: [ "docker-images/gentoo-builder/**" ]
+    paths: [ "docker-images/gentoo-builder/**", ".github/workflows/gentoo-builder.yml" ]
   pull_request:
     branches: [ "master" ]
 env:
