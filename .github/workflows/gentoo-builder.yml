@@ -1,0 +1,14 @@
+name: gentoo-builder
+on:
+  push:
+    branches: [ "master" ]
+    paths: [ "docker-images/gentoo-builder/**" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build docker-images/gentoo-builder --tag gentoo-builder:$(date +%s)
