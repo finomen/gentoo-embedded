@@ -33,6 +33,9 @@ jobs:
       with:
         context: docker-images/gentoo-crossdev
         build-args: TARGET=armv7a-hardfloat-linux-gnueabi
+        secret-envs: |
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO=finomen/gentoo-embedded
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
