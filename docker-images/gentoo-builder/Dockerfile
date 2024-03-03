@@ -9,7 +9,7 @@ COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 ADD portage /etc/portage
 ADD crossdev.conf /etc/portage/repos.conf/crossdev.conf
 
-RUN emerge -vq dev-python/PyGithub && emerge --update --deep --newuse -vq @world && emerge -vq eix vim crossdev && eix-update
+RUN emerge -vq dev-python/PyGithub && emerge --update --deep --newuse -vq @world && emerge -vq eix vim crossdev merge-usr && eix-update
 
 RUN \ 
     cat /etc/portage/make.conf.tail >> /etc/portage/make.conf && \
