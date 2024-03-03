@@ -15,7 +15,7 @@ KERNEL: linux
 PACKAGES: 76
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709473075
+TIMESTAMP: 1709473294
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -1323,4 +1323,24 @@ SIZE: 745013
 SLOT: 0/5
 USE: arm elibc_glibc kernel_linux
 MTIME: 1709473075
+REPO: gentoo
+
+BUILD_ID: 2
+BUILD_TIME: 1709473293
+CPV: dev-lang/python-exec-2.4.10
+DEFINED_PHASES: configure install setup
+EAPI: 7
+IUSE: python_targets_pypy3 python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 +native-symlinks test
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris
+LICENSE: BSD-2
+MD5: ef318c9b0b4d2cc114d2eb26cf1d583e
+PATH: dev-lang/python-exec/python-exec-2.4.10-2.xpak
+RDEPEND: dev-lang/python-exec-conf !<=dev-lang/python-2.7.18-r3:2.7
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6
+RESTRICT: test
+SHA1: be5260b4e16520903a851c0322e974fbe14e674f
+SIZE: 35073
+SLOT: 2
+USE: arm elibc_glibc kernel_linux native-symlinks python_targets_python3_11
+MTIME: 1709473294
 REPO: gentoo
