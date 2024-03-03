@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 183
+PACKAGES: 184
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709496275
+TIMESTAMP: 1709496300
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3437,4 +3437,25 @@ SHA1: 455994aa3abceae8bff0f27e22f9bc828333cf6c
 SIZE: 462919
 USE: arm elibc_glibc kernel_linux python_single_target_python3_11
 MTIME: 1709496275
+REPO: gentoo
+
+BDEPEND: app-alternatives/yacc >=app-portage/elt-patches-20170815
+BUILD_ID: 1
+BUILD_TIME: 1709496300
+CPV: dev-libs/libksba-1.6.6
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-libs/libgpg-error-1.33
+EAPI: 8
+IUSE: static-libs verify-sig
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris
+LICENSE: LGPL-3+ GPL-2+ GPL-3
+MD5: 5882d6fe200628da644e7fad1d02afb3
+PATH: dev-libs/libksba/libksba-1.6.6-1.xpak
+PROVIDES: arm_32: libksba.so.8
+RDEPEND: >=dev-libs/libgpg-error-1.33
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6 libgpg-error.so.0
+SHA1: b78f4c7c87541fb8e7fa1605c9d256fda7f57492
+SIZE: 184708
+USE: arm elibc_glibc kernel_linux
+MTIME: 1709496300
 REPO: gentoo
