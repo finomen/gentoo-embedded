@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 113
+PACKAGES: 114
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709486083
+TIMESTAMP: 1709486794
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -2076,3 +2076,21 @@ SLOT: 0/1.16.0
 USE: arm elibc_glibc kernel_linux python_targets_python3_11
 MTIME: 1709486083
 REPO: gentoo
+
+BDEPEND: acct-user/klipper acct-group/klipper
+BUILD_ID: 1
+BUILD_TIME: 1709486793
+CPV: app-misc/klipper-0.12.0
+DEFINED_PHASES: compile install setup
+DEPEND: dev-python/pyserial dev-python/greenlet dev-python/jinja dev-python/python-can dev-python/markupsafe dev-python/cffi acct-group/klipper acct-user/klipper
+EAPI: 8
+IUSE: doc examples python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS: amd64 arm amr64
+MD5: 5fb0ef71fd142b6fdec8af5d5814d0cf
+PATH: app-misc/klipper/klipper-0.12.0-1.xpak
+RDEPEND: dev-python/pyserial dev-python/greenlet dev-python/jinja dev-python/python-can dev-python/markupsafe dev-python/cffi acct-group/klipper acct-user/klipper
+SHA1: 1eca32e7e0b1faaa2ff56b73606fc96145c93ccc
+SIZE: 12115489
+USE: arm elibc_glibc kernel_linux python_single_target_python3_11
+MTIME: 1709486794
+REPO: klipper-overlay
