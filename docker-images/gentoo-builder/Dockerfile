@@ -6,10 +6,10 @@ FROM gentoo/stage3:${STAGE3_VERSION}
 
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
-RUN emerge -vq dev-python/PyGithub eix vim crossdev && eix-update
-
 ADD portage /etc/portage
 ADD crossdev.conf /etc/portage/repos.conf/crossdev.conf
+
+RUN emerge -vq dev-python/PyGithub && emerge -vq eix vim crossdev && eix-update
 
 RUN \ 
     cat /etc/portage/make.conf.tail >> /etc/portage/make.conf && \

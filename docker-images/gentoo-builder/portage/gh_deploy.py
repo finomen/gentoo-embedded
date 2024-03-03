@@ -114,7 +114,7 @@ class PkgConfig:
 
         if len(long_description) > 0:
             long_description = long_description[0].text.strip()
-            long_description = re.sub('^\s*', '', long_description, flags=re.M)
+            long_description = re.sub('^\\s*', '', long_description, flags=re.M)
             long_description = re.sub('\n', ' ', long_description, flags=re.M)
         return long_description
 
@@ -158,7 +158,7 @@ class GitHubConfig:
             return self.repo.get_release(release_name)
         except Exception:
             description = pkg.package_description() if pkg.multi_instance else pkg.category_description()
-            return self.repo.create_git_release(release_name, pkg.category, description, target_commitish=branch.commit.sha)
+            return self.repo.create_git_release(release_name, release_name, description, target_commitish=branch.commit.sha)
 
     def publish(self, pkg):
         branch = self.ensure_barnch()
@@ -273,7 +273,7 @@ def getXpakDesc():
         if len(g_catDesc) > 0:
             g_catDesc = g_catDesc[0].text.strip()
             g_catDesc = re.sub('^\s*', '', g_catDesc, flags=re.M)  # strip leading spaces>
-            g_catDesc = re.sub('\n', ' ', g_catDesc, flags=re.M)  # convert to single lin>
+            g_catDesc = re.sub('\\n', ' ', g_catDesc, flags=re.M)  # convert to single lin>
     except:
         g_catDesc = 'custom category'
 
