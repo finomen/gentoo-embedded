@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 152
+PACKAGES: 153
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709491670
+TIMESTAMP: 1709492346
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -2838,4 +2838,25 @@ SHA1: 6d39c70ff5c6bed20218248558e3f9bd80fcbd5a
 SIZE: 866682
 USE: arm edit elibc_glibc kernel_linux slang
 MTIME: 1709491670
+REPO: gentoo
+
+BUILD_ID: 1
+BUILD_TIME: 1709492346
+CPV: dev-libs/mpfr-4.2.1
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-libs/gmp-5.0.0:0/10.4=
+EAPI: 8
+IUSE: static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 verify-sig
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris
+LICENSE: LGPL-3+
+MD5: b163ee86f048b030ee0553f7039f631c
+PATH: dev-libs/mpfr/mpfr-4.2.1-1.xpak
+PROVIDES: arm_32: libmpfr.so.6
+RDEPEND: >=dev-libs/gmp-5.0.0:0/10.4=
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6 libgmp.so.10
+SHA1: de5b42f26d3adde3b41258f74fa0205751a3c8a4
+SIZE: 356328
+SLOT: 0/6
+USE: arm elibc_glibc kernel_linux
+MTIME: 1709492346
 REPO: gentoo
