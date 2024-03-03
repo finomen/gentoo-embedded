@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 140
+PACKAGES: 141
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709491246
+TIMESTAMP: 1709491309
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -2596,4 +2596,26 @@ SIZE: 1389472
 SLOT: 0/3
 USE: arm elibc_glibc jit kernel_linux pcre16 pcre32 readline unicode zlib
 MTIME: 1709491246
+REPO: gentoo
+
+BDEPEND: app-arch/xz-utils dev-lang/perl
+BUILD_ID: 1
+BUILD_TIME: 1709491309
+CPV: sys-apps/coreutils-9.4-r1
+DEFINED_PHASES: configure install postinst prepare setup test unpack
+DEPEND: dev-libs/openssl:0/3=
+EAPI: 8
+IUSE: acl caps gmp hostname kill multicall nls +openssl selinux +split-usr static test vanilla xattr verify-sig
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x86-linux
+LICENSE: GPL-3+
+MD5: be95ee12ef50eadc105257fdf24582ee
+PATH: sys-apps/coreutils/coreutils-9.4-r1-1.xpak
+PROVIDES: arm_32: libstdbuf.so
+RDEPEND: dev-libs/openssl:0/3= !<sys-apps/util-linux-2.13 !<sys-apps/sandbox-2.10-r4 !sys-apps/stat !net-mail/base64 !sys-apps/mktemp !<app-forensics/tct-1.18-r1 !<net-fs/netatalk-2.0.3-r4
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6 libcrypto.so.3
+RESTRICT: test
+SHA1: dc10f9b79a1d74c3693f648f3c7f7ea4b3992f6e
+SIZE: 1205444
+USE: arm elibc_glibc kernel_linux multicall openssl split-usr
+MTIME: 1709491309
 REPO: gentoo
