@@ -5,17 +5,17 @@ ACCEPT_RESTRICT: *
 ARCH: arm
 CBUILD: x86_64-pc-linux-gnu
 CHOST: armv7a-hardfloat-linux-gnueabi
-CONFIG_PROTECT: /etc
+CONFIG_PROTECT: /etc /opt/klipper/.config
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/gconf /etc/gentoo-release
 ELIBC: glibc
 FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-multi-instance buildpkg buildpkg-live config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg ipc-sandbox merge-sync multilib-strict network-sandbox news nodoc noinfo noman parallel-fetch pid-sandbox pkgdir-index-trusted preserve-libs protect-owned qa-unresolved-soname-deps sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync xattr
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 177
+PACKAGES: 178
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709494670
+TIMESTAMP: 1709496108
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3312,4 +3312,25 @@ SHA1: e76de428c0b5792ab511d1d9c0db207ef55ddf03
 SIZE: 1253603
 USE: arm elibc_glibc kernel_linux python_single_target_python3_11
 MTIME: 1709494670
+REPO: gentoo
+
+BDEPEND: app-arch/xz-utils
+BUILD_ID: 1
+BUILD_TIME: 1709496108
+CPV: sys-apps/sandbox-2.38
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: >=app-misc/pax-utils-0.1.19
+EAPI: 7
+IUSE: +nnp abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86
+LICENSE: GPL-2
+MD5: 9b691c5c287619c90a0406741dbd3f9a
+PATH: sys-apps/sandbox/sandbox-2.38-1.xpak
+PROVIDES: arm_32: libsandbox.so
+RDEPEND: !<sys-apps/file-5.44-r1
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6 libgcc_s.so.1
+SHA1: a0191ca8d7075529d2582ca7acaf2e919d9196eb
+SIZE: 170678
+USE: arm elibc_glibc kernel_linux nnp
+MTIME: 1709496108
 REPO: gentoo
