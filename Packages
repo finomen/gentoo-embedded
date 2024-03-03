@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 190
+PACKAGES: 191
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709502690
+TIMESTAMP: 1709503515
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3566,3 +3566,23 @@ SIZE: 23486300
 USE: arm dummy1 elibc_glibc kernel_linux
 MTIME: 1709502690
 REPO: klipper-overlay
+
+BDEPEND: virtual/pkgconfig
+BUILD_ID: 1
+BUILD_TIME: 1709503514
+CPV: sys-apps/grep-3.11
+DEFINED_PHASES: configure install prepare unpack
+DEPEND: virtual/libiconv
+EAPI: 8
+IUSE: +egrep-fgrep nls pcre static verify-sig
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris
+LICENSE: GPL-3+
+MD5: e5e23f00905480c7ed16337ee3e9d071
+PATH: sys-apps/grep/grep-3.11-1.xpak
+RDEPEND: virtual/libiconv
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6
+SHA1: 963ee7c213dae0001d3ee3fe0b32f50e4f13beb2
+SIZE: 300924
+USE: arm egrep-fgrep elibc_glibc kernel_linux
+MTIME: 1709503515
+REPO: gentoo
