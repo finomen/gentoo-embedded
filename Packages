@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 87
+PACKAGES: 88
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709474697
+TIMESTAMP: 1709474815
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -1570,4 +1570,27 @@ SHA1: 95bd28c66cc8f15b6b68f85eb0eaf4dbc3b64792
 SIZE: 2355679
 USE: arm cramfs elibc_glibc hardlink kernel_linux logger pam python_targets_python3_11 readline su suid
 MTIME: 1709474697
+REPO: gentoo
+
+BDEPEND: dev-build/autoconf-archive app-alternatives/awk virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 >=dev-build/automake-1.16.5:1.16 || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 )
+BUILD_ID: 1
+BUILD_TIME: 1709474812
+CPV: dev-lang/python-3.11.8_p1
+DEFINED_PHASES: compile configure install postinst prepare pretend setup test unpack
+DEPEND: app-arch/bzip2:0/1= app-arch/xz-utils:0/0= app-crypt/libb2 >=dev-libs/expat-2.1:0/0= dev-libs/libffi:0/8= dev-python/gentoo-common >=sys-libs/zlib-1.1.3:0/1= virtual/libcrypt:0/2= virtual/libintl dev-python/ensurepip-wheels sys-apps/util-linux:0/0= >=sys-libs/ncurses-5.2:0/6= >=sys-libs/readline-4.1:0/8= >=dev-db/sqlite-3.3.8:3/3= >=dev-libs/openssl-1.1.1:0/3=
+EAPI: 8
+IUSE: bluetooth build debug +ensurepip examples gdbm libedit +ncurses pgo +readline +sqlite +ssl test tk valgrind verify-sig
+KEYWORDS: ~alpha amd64 arm arm64 ~hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86
+LICENSE: PSF-2
+MD5: 188c2d025450239bb34bf9802dbe6edd
+PATH: dev-lang/python/python-3.11.8_p1-1.xpak
+PROVIDES: arm_32: _asyncio.cpython-311-arm-linux-gnueabihf.so _bisect.cpython-311-arm-linux-gnueabihf.so _blake2.cpython-311-arm-linux-gnueabihf.so _bz2.cpython-311-arm-linux-gnueabihf.so _codecs_cn.cpython-311-arm-linux-gnueabihf.so _codecs_hk.cpython-311-arm-linux-gnueabihf.so _codecs_iso2022.cpython-311-arm-linux-gnueabihf.so _codecs_jp.cpython-311-arm-linux-gnueabihf.so _codecs_kr.cpython-311-arm-linux-gnueabihf.so _codecs_tw.cpython-311-arm-linux-gnueabihf.so _contextvars.cpython-311-arm-linux-gnueabihf.so _crypt.cpython-311-arm-linux-gnueabihf.so _csv.cpython-311-arm-linux-gnueabihf.so _ctypes.cpython-311-arm-linux-gnueabihf.so _ctypes_test.cpython-311-arm-linux-gnueabihf.so _curses.cpython-311-arm-linux-gnueabihf.so _curses_panel.cpython-311-arm-linux-gnueabihf.so _datetime.cpython-311-arm-linux-gnueabihf.so _decimal.cpython-311-arm-linux-gnueabihf.so _elementtree.cpython-311-arm-linux-gnueabihf.so _hashlib.cpython-311-arm-linux-gnueabihf.so _heapq.cpython-311-arm-linux-gnueabihf.so _json.cpython-311-arm-linux-gnueabihf.so _lsprof.cpython-311-arm-linux-gnueabihf.so _lzma.cpython-311-arm-linux-gnueabihf.so _md5.cpython-311-arm-linux-gnueabihf.so _multibytecodec.cpython-311-arm-linux-gnueabihf.so _multiprocessing.cpython-311-arm-linux-gnueabihf.so _opcode.cpython-311-arm-linux-gnueabihf.so _pickle.cpython-311-arm-linux-gnueabihf.so _posixshmem.cpython-311-arm-linux-gnueabihf.so _posixsubprocess.cpython-311-arm-linux-gnueabihf.so _queue.cpython-311-arm-linux-gnueabihf.so _random.cpython-311-arm-linux-gnueabihf.so _sha1.cpython-311-arm-linux-gnueabihf.so _sha256.cpython-311-arm-linux-gnueabihf.so _sha3.cpython-311-arm-linux-gnueabihf.so _sha512.cpython-311-arm-linux-gnueabihf.so _socket.cpython-311-arm-linux-gnueabihf.so _sqlite3.cpython-311-arm-linux-gnueabihf.so _ssl.cpython-311-arm-linux-gnueabihf.so _statistics.cpython-311-arm-linux-gnueabihf.so _struct.cpython-311-arm-linux-gnueabihf.so _testbuffer.cpython-311-arm-linux-gnueabihf.so _testcapi.cpython-311-arm-linux-gnueabihf.so _testclinic.cpython-311-arm-linux-gnueabihf.so _testimportmultiple.cpython-311-arm-linux-gnueabihf.so _testinternalcapi.cpython-311-arm-linux-gnueabihf.so _testmultiphase.cpython-311-arm-linux-gnueabihf.so _typing.cpython-311-arm-linux-gnueabihf.so _uuid.cpython-311-arm-linux-gnueabihf.so _xxsubinterpreters.cpython-311-arm-linux-gnueabihf.so _xxtestfuzz.cpython-311-arm-linux-gnueabihf.so _zoneinfo.cpython-311-arm-linux-gnueabihf.so array.cpython-311-arm-linux-gnueabihf.so audioop.cpython-311-arm-linux-gnueabihf.so binascii.cpython-311-arm-linux-gnueabihf.so cmath.cpython-311-arm-linux-gnueabihf.so fcntl.cpython-311-arm-linux-gnueabihf.so grp.cpython-311-arm-linux-gnueabihf.so libpython3.11.so.1.0 math.cpython-311-arm-linux-gnueabihf.so mmap.cpython-311-arm-linux-gnueabihf.so ossaudiodev.cpython-311-arm-linux-gnueabihf.so pyexpat.cpython-311-arm-linux-gnueabihf.so readline.cpython-311-arm-linux-gnueabihf.so resource.cpython-311-arm-linux-gnueabihf.so select.cpython-311-arm-linux-gnueabihf.so spwd.cpython-311-arm-linux-gnueabihf.so syslog.cpython-311-arm-linux-gnueabihf.so termios.cpython-311-arm-linux-gnueabihf.so unicodedata.cpython-311-arm-linux-gnueabihf.so xxlimited.cpython-311-arm-linux-gnueabihf.so xxlimited_35.cpython-311-arm-linux-gnueabihf.so zlib.cpython-311-arm-linux-gnueabihf.so
+RDEPEND: app-arch/bzip2:0/1= app-arch/xz-utils:0/0= app-crypt/libb2 >=dev-libs/expat-2.1:0/0= dev-libs/libffi:0/8= dev-python/gentoo-common >=sys-libs/zlib-1.1.3:0/1= virtual/libcrypt:0/2= virtual/libintl dev-python/ensurepip-wheels sys-apps/util-linux:0/0= >=sys-libs/ncurses-5.2:0/6= >=sys-libs/readline-4.1:0/8= >=dev-db/sqlite-3.3.8:3/3= >=dev-libs/openssl-1.1.1:0/3= app-misc/mime-types dev-lang/python-exec[python_targets_python3_11(-)]
+REQUIRES: arm_32: ld-linux-armhf.so.3 libb2.so.1 libbz2.so.1 libc.so.6 libcrypt.so.2 libcrypto.so.3 libexpat.so.1 libffi.so.8 liblzma.so.5 libm.so.6 libncursesw.so.6 libpanelw.so.6 libreadline.so.8 libsqlite3.so.0 libssl.so.3 libuuid.so.1 libz.so.1
+RESTRICT: test
+SHA1: 0b2217caa2a361e0449c685761079877254cfa0a
+SIZE: 41568053
+SLOT: 3.11
+USE: arm elibc_glibc ensurepip kernel_linux ncurses readline sqlite ssl
+MTIME: 1709474814
 REPO: gentoo
