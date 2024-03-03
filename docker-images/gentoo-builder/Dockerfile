@@ -17,7 +17,7 @@ RUN \
     echo 'masters = gentoo' > /var/db/repos/crossdev/metadata/layout.conf && \
     chown -R portage:portage /var/db/repos/crossdev && \
     emerge -vq dev-python/PyGithub && \
-    emerge --update --deep --newuse -vq @world && \
+    #emerge --update --deep --newuse -vq @world && \
     emerge -vq eix vim crossdev merge-usr && \
     eix-update
 
