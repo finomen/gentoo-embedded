@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 170
+PACKAGES: 171
 PROFILE: embedded
 URI: https://github.com/finomen/gentoo-embedded/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709494268
+TIMESTAMP: 1709494311
 URI: https://github.com/finomen/gentoo-embedded/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm bindist elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3168,4 +3168,25 @@ SHA1: c755a439d99cf7fd010ed07a0160158b827e61a1
 SIZE: 7982
 USE: arm elibc_glibc kernel_linux
 MTIME: 1709494268
+REPO: gentoo
+
+BDEPEND: virtual/pkgconfig
+BUILD_ID: 1
+BUILD_TIME: 1709494311
+CPV: net-misc/dhcpcd-10.0.6-r2
+DEFINED_PHASES: configure install postinst
+DEPEND: virtual/udev
+EAPI: 8
+IUSE: debug +embedded ipv6 privsep +udev
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE: BSD-2 BSD ISC MIT
+MD5: 84e51f66e98b532db429615208391c9e
+PATH: net-misc/dhcpcd/dhcpcd-10.0.6-r2-1.xpak
+PROVIDES: arm_32: udev.so
+RDEPEND: virtual/udev
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6 libudev.so.1
+SHA1: d4ae9b0e89eac4af56854986ab5b1166a9ead4d6
+SIZE: 175300
+USE: arm elibc_glibc embedded kernel_linux udev
+MTIME: 1709494311
 REPO: gentoo
