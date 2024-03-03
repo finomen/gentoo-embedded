@@ -7,9 +7,9 @@ FROM gentoo/stage3:${STAGE3_VERSION}
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
 ADD portage /etc/portage
-ADD crossdev.conf /etc/portage/repos.conf/crossdev.conf
 
 RUN \
+    rm -f /etc/portage/binrepos.conf/gentoobinhost.conf && \
     cat /etc/portage/make.conf.tail >> /etc/portage/make.conf && \
     rm /etc/portage/make.conf.tail && \
     mkdir -p /var/db/repos/crossdev/{profiles,metadata} && \
