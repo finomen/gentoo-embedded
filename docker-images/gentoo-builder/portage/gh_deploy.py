@@ -142,10 +142,10 @@ class GitHubConfig:
         try:
             try:
                 return self.repo.get_branch(self.branch_name)
-            except UnknownObjectException:
+            except Exception:
                 master_branch = self.repo.get_branch("master")
-                return repo.create_git_ref(ref='refs/heads/' + self.branch_name, sha=master_branch.commit.sha)
-        except GithubException:
+                return self.repo.create_git_ref(ref='refs/heads/' + self.branch_name, sha=master_branch.commit.sha)
+        except Exception:
             print("Unable to ensure '%s' branch!" % gh_branch)
             exit(1)
 
@@ -156,9 +156,9 @@ class GitHubConfig:
 
         try:
             return self.repo.get_release(release_name)
-        except UnknownObjectException:
+        except Exception:
             description = pkg.package_description() if pkg.multi_instance else pkg.category_description()
-            return repo.create_git_release(gh_relName, pkg.category, description, target_commitish=branch.commit.sha)
+            return self.repo.create_git_release(release_name, pkg.category, description, target_commitish=branch.commit.sha)
 
     def publish(self, pkg):
         branch = self.ensure_barnch()
